@@ -1,10 +1,27 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  // const array = [1,2,3,4,5,6,7,8,9,10];
+for (let index = 0; index < array.length; index++) {
+  // const element = array[index];
+  // for (let a = index + 1; a=  < array.length; a++) {
+  //   // const element = array[q= ];
+  // }
+for ( let a = index +1; a < array.length; a++){
+  if (array[a] + array[index] == target) {
+    return true;
+  }
+}
+  
+}
+// if not target then return false
+return false;
+
 }
 
 /* 
   Write the Big O time complexity of your function here
-*/
+0(n*2)
+  */
 
 /* 
   Add your pseudocode here
